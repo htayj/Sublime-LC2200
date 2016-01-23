@@ -30,7 +30,7 @@ Edit .tmLanguage files  manually
 Edit .JSON-tmLanguage language files and generate .tmLanguage files using [AAAPackageDev](https://bitbucket.org/guillermooo/aaapackagedev).
 
 **Generating files from JSON file:**
-	Install AAAPackageDev
-	Open JSON file with Sublime Text 2
-	build JSON file with ctrl-b
-	choose "Convert To: Property List"
+	1. Install AAAPackageDev
+	2. Open JSON file with Sublime Text 2
+	3. build JSON file with ctrl-b
+	4. choose "Convert To: Property List"
