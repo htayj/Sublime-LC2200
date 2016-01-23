@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>ssraw</string>
+	</array>
+	<key>name</key>
+	<string>LC2200 (Inst/Pseudo-Inst)</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Comment format ! or #</string>
+			<key>match</key>
+			<string>(!.*)|(#.*)</string>
+			<key>name</key>
+			<string>comment.line</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Register format $...</string>
+			<key>match</key>
+			<string>\$(([zZ][eE][rR][oO])|([a-zA-Z][0-7a-zA-Z])|([a][t])|([vVkK][0])|([aAtTsS][0-2])|([sSfF][pP])|([rR][aA]))</string>
+			<key>name</key>
+			<string>variable.language</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Instructions</string>
+			<key>match</key>
+			<string>((\s|^)([aA][dD][dD]([iI])?)|([nN][aA][nN][dD])|([sSlL][wW])|([bB][eE][qQ])|([jJ][aA][lL][rR]))\s</string>
+			<key>name</key>
+			<string>keyword.operator</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Hexadecimal numbers format 0xFFFF</string>
+			<key>match</key>
+			<string>[0]x[0-9A-F]+</string>
+			<key>name</key>
+			<string>constant.numeric.hex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Binary numbers format b10</string>
+			<key>match</key>
+			<string>(b[01]+)\s</string>
+			<key>name</key>
+			<string>constant.numeric.bin</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Decimal numbers format #123 123</string>
+			<key>match</key>
+			<string>#?[0-9]+\s</string>
+			<key>name</key>
+			<string>constant.numeric.dec</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Pseudo-Instructions</string>
+			<key>match</key>
+			<string>([hH][aA][lL][tT])|([lL][aA])|([nN][oO][oO][pP])|([\.][wW][oO][rR][dD])</string>
+			<key>name</key>
+			<string>keyword.other</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Label format</string>
+			<key>match</key>
+			<string>[\w\d]+:?</string>
+			<key>name</key>
+			<string>entity.name.function</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.s</string>
+	<key>uuid</key>
+	<string>73c10747-3abb-4772-9563-f62d44133e38</string>
+</dict>
+</plist>

@@ -1,0 +1,41 @@
+{   "name": "LC2200 (Inst/Pseudo-Inst)",
+    "scopeName": "source.s",
+    "fileTypes": ["ssraw"],
+    "patterns": [
+     	{ "match": "(!.*)|(#.*)",
+          "name": "comment.line",
+          "comment": "Comment format ! or #"
+        },
+        { "match": "\\$(([zZ][eE][rR][oO])|([a-zA-Z][0-7a-zA-Z])|([a][t])|([vVkK][0])|([aAtTsS][0-2])|([sSfF][pP])|([rR][aA]))",
+          "name": "variable.language",
+          "comment": "Register format $..."
+        },
+        { "match":  "((\\s|^)([aA][dD][dD]([iI])?)|([nN][aA][nN][dD])|([sSlL][wW])|([bB][eE][qQ])|([jJ][aA][lL][rR]))\\s",
+          "name": "keyword.operator", 
+          // "name": "support.function", 
+          "comment": "Instructions" //note: la is in pseudo-instructions
+        },
+         { "match": "[0]x[0-9A-F]+",
+          "name": "constant.numeric.hex",
+          "comment": "Hexadecimal numbers format 0xFFFF"
+        },
+        { "match": "(b[01]+)\\s",
+          "name": "constant.numeric.bin",
+          "comment": "Binary numbers format b10"
+        },
+        { "match": "#?[0-9]+\\s",
+          "name": "constant.numeric.dec",
+          "comment": "Decimal numbers format #123 123"
+        },
+        { "match": "([hH][aA][lL][tT])|([lL][aA])|([nN][oO][oO][pP])|([\\.][wW][oO][rR][dD])",
+          // "name": "keyword.control",
+          "name": "keyword.other",
+          "comment": "Pseudo-Instructions"
+        },
+         { "match": "[\\w\\d]+:?",
+         "name":"entity.name.function",
+          "comment": "Label format"
+        }
+    ],
+    "uuid": "73c10747-3abb-4772-9563-f62d44133e38"
+}

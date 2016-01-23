@@ -1,0 +1,56 @@
+{   "name": "LC2200 (multi-catagory)",
+    "scopeName": "source.s",
+    "fileTypes": ["ssraw"],
+    "patterns": [
+     	{ "match": "(!.*)|(#.*)",
+          "name": "comment.line",
+          "comment": "Comment format ! or #"
+        },
+        { "match": "\\$(([zZ][eE][rR][oO])|([a-zA-Z][0-7a-zA-Z])|([a][t])|([vVkK][0])|([aAtTsS][0-2])|([sSfF][pP])|([rR][aA]))",
+          "name": "variable.language",
+          "comment": "Register format $..."
+        },
+        { "match":  "((\\s|^)([aA][dD][dD]([iI])?)|([nN][aA][nN][dD]))\\s",
+          "name": "keyword.operator", 
+          // "name": "support.function", 
+          "comment": "Arithmetic operators"
+        },
+        { "match":  "((\\s|^)([hH][aA][lL][tT])|([bB][eE][qQ])|([jJ][aA][lL][rR]))\\s",
+          // "name": "keyword.operator", 
+          "name": "keyword.control", 
+          "comment": "Flow control"
+        },
+        { "match":  "((\\s|^)([lL][aAwW]))\\s",
+          // "name": "keyword.operator", 
+          "name": "support.function", 
+          "comment": "Loading"
+        },
+        { "match":  "((\\s|^)([sS][wW]))\\s",
+          // "name": "keyword.operator", 
+          "name": "support.function", 
+          "comment": "Saving"
+        },
+         { "match": "[0]x[0-9A-F]+",
+          "name": "constant.numeric.hex",
+          "comment": "Hexadecimal numbers format 0xFFFF"
+        },
+        { "match": "(b[01]+)\\s",
+          "name": "constant.numeric.bin",
+          "comment": "Binary numbers format b10"
+        },
+        { "match": "#?[0-9]+\\s",
+          "name": "constant.numeric.dec",
+          "comment": "Decimal numbers format #123 123"
+        },
+        { "match": "([nN][oO][oO][pP])|([\\.][wW][oO][rR][dD])",
+          // "name": "keyword.control",
+          "name": "support.other",
+          "comment": "noop and .word"
+        },
+         { "match": "[\\w\\d]+:?",
+         "name":"entity.name.function",
+          "comment": "Label format"
+        }
+    ],
+    "uuid": "73c10747-3abb-4772-9563-f62d44133e38"
+}
