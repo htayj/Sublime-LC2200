@@ -6,8 +6,8 @@
 - commenting with "!" using the comment keyboard shortcut
 - 2 different highlighting schemes
 	1. **inst pseudoinst**: Operations divided only into 2 catagories 
-		instructions
-		pseudo-instructions
+		- instructions
+		- pseudo-instructions
 	2. **multi-catagory**: operations divided into multiple catagories
 		- **arithmetic**: add, addi, nand
 		- **controls**: beq, jalr, halt
