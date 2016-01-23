@@ -1,18 +1,18 @@
 ## Description:
 
-**Sublime LC2200** is a **Sublime Text 2* syntax package for LC2200 assembly code.
+**Sublime LC2200** is a *Sublime Text 2* syntax package for LC2200 assembly code.
 
 ## Includes:
-commenting with "!" using the comment keyboard shortcut
-2 different highlighting schemes
-	**inst pseudoinst**: Operations divided only into 2 catagories 
+- commenting with "!" using the comment keyboard shortcut
+- 2 different highlighting schemes
+	1. **inst pseudoinst**: Operations divided only into 2 catagories 
 		instructions
 		pseudo-instructions
-	**multi-catagory**: operations divided into multiple catagories
-		**arithmetic**: add, addi, nand
-		**controls**: beq, jalr, halt
-		**loading/saving**: lw, sw, la
-		**misc**: noop, .word
+	2. **multi-catagory**: operations divided into multiple catagories
+		- **arithmetic**: add, addi, nand
+		- **controls**: beq, jalr, halt
+		- **loading/saving**: lw, sw, la
+		- **misc**: noop, .word
 
 ## Usage:
 
