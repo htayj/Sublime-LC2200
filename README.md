@@ -19,7 +19,7 @@
 Install (Linux):
   
     cd .config/sublime-text-2/Packages
-    git clone git://github.com/wufufufu/Sublime-LC2200.git
+    git clone git://github.com/HardyTaylorJ/Sublime-LC2200
 
 ## Edit:
 
