@@ -21,6 +21,10 @@ Install (Linux):
     cd .config/sublime-text-2/Packages
     git clone git://github.com/HardyTaylorJ/Sublime-LC2200
 
+To select the syntax once installed (if autoselection fails):
+
+	View -> Syntax -> Sublime-LC2200
+
 ## Edit:
 
 Edit .tmLanguage files  manually
